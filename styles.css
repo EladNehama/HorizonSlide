@@ -1,0 +1,34 @@
+
+.container {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  }
+
+.container-firstloopimage{
+  width: 100%;
+  height : 100%;
+  background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
+  background-size:cover;
+  float: left;
+  background-repeat:repeat-x;
+  display: table-cell;
+  animation: horizon 5s linear infinite;
+}
+
+.container-lastloopimage {
+width: 100%;
+height : 100%;
+background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
+background-size:cover;
+float: right;
+  display: table-cell;
+animation: horizon 5s  linear infinite;
+}
+
+@keyframes horizon {
+  to {
+       transform: translateX(-1000px)
+     }
+   }
+}
