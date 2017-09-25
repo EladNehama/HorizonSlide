@@ -3,32 +3,32 @@
   width: 400px;
   height: 400px;
   overflow: hidden;
+  flex-wrap: nowrap;
   }
 
 .container-firstloopimage{
-  width: 100%;
+  width: 50%;
   height : 100%;
   background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
   background-size:cover;
   float: left;
-  background-repeat:repeat-x;
-  display: table-cell;
+  flex-wrap: nowrap;
+  flex-direction: column;
   animation: horizon 5s linear infinite;
 }
 
+
 .container-lastloopimage {
-width: 100%;
+width: 50%;
 height : 100%;
 background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
 background-size:cover;
 float: right;
-  display: table-cell;
+flex-wrap: nowrap;
 animation: horizon 5s  linear infinite;
 }
 
 @keyframes horizon {
-  to {
-       transform: translateX(-1000px)
-     }
-   }
+to {
+  transform: translateX(-800px)
 }
